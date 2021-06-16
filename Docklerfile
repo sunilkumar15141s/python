@@ -1,0 +1,8 @@
+From ubuntu:latest
+
+Maintainer "sunilreddy.ch15141@gmail.com"
+
+RUN sudo apt-get update && sudo apt-get install tomcat9
+
+WORKDIR /var/lin/tomcat9/workspace
+EXPOSE 8080
