@@ -1,0 +1,16 @@
+pipeline{
+agents any
+{
+stages
+{
+step
+{
+checkout
+}
+}
+step
+{
+build
+}
+}
+}
