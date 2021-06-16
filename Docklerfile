@@ -5,4 +5,9 @@ Maintainer "sunilreddy.ch15141@gmail.com"
 RUN sudo apt-get update && sudo apt-get install tomcat9
 
 WORKDIR /var/lin/tomcat9/workspace
+
 EXPOSE 8080
+
+Volume /var/lib/docker/data
+
+COPY index.html /var/lib/tomcat9/webapps/
